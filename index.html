@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro veterinario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquares.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+    <nav class="tittle">
+        <div class="logo-container">
+        <logo>CENTRO VETERINARIO</logo>
+        <h2>Caninos y</h2>
+        <h3>Felinos</h3>
+    </div>     
+        <img src="assets/Fondo de logo eliminado.png" alt="Logo" width="150px" height="150px">
+    </nav>
+        <nav class="menu">
+            <ul>
+                <li>.Servicios.</li>
+                <hr>
+                <li>.Productos.</li>
+                <hr>
+                <li>.Guarderia.</li>
+                <hr>
+                <li>.Promociones.</li>  
+            </ul> 
+        </header>
+        </nav>
+        </div>
+       <nav class="box-text">
+    <div class="container-box">
+            <h1>Cuidados y educación para su perro</h1>
+        <div class="text-box">
+            <p>Equam, ium fugiandebis sit, qui occab ipienihit as moluptatur volupta pa et, offictur? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
+            <img src="/assets/perro.jpeg" alt="perro" height="40px" width="50px" >
+        </div>
+    </div> 
+    <div class="container-box">
+            <h1>Cuidados y educación para su perro</h1>
+        <div class="text-box">
+            <p>Equam, ium fugiandebis sit, qui occab ipienihit as moluptatur volupta pa et, offictur? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
+            <img src="/assets/perro.jpeg" alt="perro" width="150px" height="150px">
+        </div>
+    </div>
+</nav>
+<aside class="form">
+    <h3>Solicitar cita médica</h3>
+    <form action="/submit_appointment" method="post">
+      <label for="pet-name">Nombre de la mascota:</label>
+      <input type="text" id="pet-name" name="pet_name" required><br>
+      
+      <label for="pet-age">Edad:</label>
+      <input type="number" id="pet-age" name="pet_age" min="0" max="30" required><br>
+
+      <label for="pet-breed">Raza:</label>
+      <input type="text" id="pet-breed" name="pet_breed" required><br>
+
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="date" required><br>
+
+      <label for="time">Hora:</label>
+      <input type="time" id="time" name="time" required><br>
+
+      <label for="name">Nombre del propietario:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <button type="submit">VALIDAR CITA</button>
+    </form>
+  </aside>
+<footer>
+    <p>Contactenos<br>Linea gratuita 018000-00001<br>Correo: preguntas@caninosyfelinos.co</p>
+</footer>
+</body> 
+</html>
