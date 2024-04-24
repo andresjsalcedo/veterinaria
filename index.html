@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro veterinario</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaquares.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Centro Veterinario Caninos y Felinos</title>
 </head>
 <body>
+  <header>
     <div class="container">
-    <header>
-    <nav class="tittle">
-        <div class="logo-container">
-        <logo>CENTRO VETERINARIO</logo>
-        <h2>Caninos y</h2>
-        <h3>Felinos</h3>
-    </div>     
-        <img src="assets/Fondo de logo eliminado.png" alt="Logo" width="150px" height="150px">
-    </nav>
-        <nav class="menu">
-            <ul>
-                <li>.Servicios.</li>
-                <hr>
-                <li>.Productos.</li>
-                <hr>
-                <li>.Guarderia.</li>
-                <hr>
-                <li>.Promociones.</li>  
-            </ul> 
-        </header>
-        </nav>
-        </div>
-       <nav class="box-text">
-    <div class="container-box">
-            <h1>Cuidados y educación para su perro</h1>
-        <div class="text-box">
-            <p>Equam, ium fugiandebis sit, qui occab ipienihit as moluptatur volupta pa et, offictur? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
-            <img src="/assets/perro.jpeg" alt="perro" height="40px" width="50px" >
-        </div>
-    </div> 
-    <div class="container-box">
-            <h1>Cuidados y educación para su perro</h1>
-        <div class="text-box">
-            <p>Equam, ium fugiandebis sit, qui occab ipienihit as moluptatur volupta pa et, offictur? Dusdae volore, que peribus sapist, sande volenis sunt.</p>
-            <img src="/assets/perro.jpeg" alt="perro" width="150px" height="150px">
-        </div>
+      <logo>Centro Veterinario
+      <h2>Caninos y</h2>
+      <h3>Felinos</h3>
+    </logo>
+      <img src="img/logo principal.png" alt="logo" width="200px" height="200px">
     </div>
-</nav>
-<aside class="form">
-    <h3>Solicitar cita médica</h3>
-    <form action="/submit_appointment" method="post">
-      <label for="pet-name">Nombre de la mascota:</label>
-      <input type="text" id="pet-name" name="pet_name" required><br>
-      
-      <label for="pet-age">Edad:</label>
-      <input type="number" id="pet-age" name="pet_age" min="0" max="30" required><br>
+  </header>
+  <nav class="container-box">
+    <div class="container-menu">
+      <ul>
+        <li><a href="servicios.html"><b>.Servicios.</b></a></li>
+        <hr>
+        <li><a href="productos.html"><b>.Productos.</b></a></li>
+        <hr>
+        <li><a href="guarderia.html"><b>.Guardería.</b></a></li>
+        <hr>
+        <li><a href="promociones.html"><b>.Promociones.</b></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-main-content">
+    <div class="article-container">
+      <div class="article-text">
+          <h2>Cuidados y educación para su perro</h2>
+          <div class="box-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga sapiente, maiores consectetur veritatis porro, minus nulla accusantium iusto nesciunt, laudantium nihil quisquam expedita assumenda ipsum temporibus. Ipsam, dolorem quia?</p>
+          <br>
+          <img src="img/perro1.jpeg" alt="perro2" width="200px" height="150px"> </div>      
+          <a href="https://postgradoveterinaria.com/cuidados-perro-recomendaciones-basicas/">Ver más...</a>
+            </div>
+    </div>
+  
+    <div class="article-container">
+    <div class="article-text">
+        <h2>Salir de viaje con su mascota</h2>
+        <div class="box-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga sapiente, maiores consectetur veritatis porro, minus nulla accusantium iusto nesciunt, laudantium nihil quisquam expedita assumenda ipsum temporibus. Ipsam, dolorem quia?</p>
+        <br>
+        <img src="img/gato1.jpg" alt="perro2" width="200px" height="150px"> </div>      
+        <a href="https://www.tierragro.com/blogs/news/consejos-vacaciones-mascota">Ver más...</a>
+          </div>
+    </div>
+    <div class="asidebar">
+    <aside class="sidebar">
+      <h3>SOLICITAR CITA MÉDICA</h3>
+      <form action="/submit_appointment" method="post">
+        <label class="text-form" for="pet-name">Nombre de la mascota:</label>
+        <input type="text" id="pet-name" name="pet_name" required><br>
+        
+        <label class="text-form" for="pet-age">Edad:</label>
+        <input type="number" id="pet-age" name="pet_age" min="0" max="30" required><br>
 
-      <label for="pet-breed">Raza:</label>
-      <input type="text" id="pet-breed" name="pet_breed" required><br>
+        <label class="text-form" for="pet-breed">Raza:</label>
+        <input type="text" id="pet-breed" name="pet_breed" required><br>
 
-      <label for="date">Fecha:</label>
-      <input type="date" id="date" name="date" required><br>
+        <label class="text-form" for="date">Fecha:</label>
+        <input type="date" id="date" name="date" required><br>
 
-      <label for="time">Hora:</label>
-      <input type="time" id="time" name="time" required><br>
+        <label class="text-form" for="time">Hora:</label>
+        <input type="time" id="time" name="time" required><br>
 
-      <label for="name">Nombre del propietario:</label>
-      <input type="text" id="name" name="name" required><br>
+        <label class="text-form" for="name">Nombre del propietario:</label>
+        <input type="text" id="name" name="name" required><br>
 
-      <button type="submit">VALIDAR CITA</button>
-    </form>
-  </aside>
-<footer>
-    <p>Contactenos<br>Linea gratuita 018000-00001<br>Correo: preguntas@caninosyfelinos.co</p>
-</footer>
-</body> 
+        <button type="submit">VALIDAR CITA</button>
+      </form>
+    </aside>
+  </div>
+  </div>
+</div>
+  <footer>
+    <div class="container">
+      <p class="pie">Contáctenos
+        <br>
+        Línea gratuita 018000-00001
+        <br>
+        Correo: preguntas@caninosyfelinos.com
+      </p>
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
